@@ -63,7 +63,9 @@ from dept natural join emp;
 
 #### Outer join
 
-Left outer join -  
+Join 조건을 만족하지 않는 튜플 (짝이 없는 튜플)도 null과 함께 나타난다.
+
+outer join 앞에 left, right, all을 붙여서 어느 쪽의 테이블 값을 모두 나타낼 것인지 결정할 수 있다.
 
 ```sql
 -- left outer join 
@@ -195,7 +197,7 @@ WHERE deptno = (SELECT deptno FROM dept WHERE dname = 'SALES');
 
 
 
-###Multi-row subquery
+### Multi-row subquery
 
 Subquery의 결과가 **둘 이상**의 Row 일 때
 
